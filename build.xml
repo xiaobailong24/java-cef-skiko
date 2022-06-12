@@ -18,6 +18,10 @@
       <include name="gluegen-rt-natives-macosx-universal.jar"/>
       <include name="jogl-all.jar"/>
       <include name="jogl-all-natives-macosx-universal.jar"/>
+      <!-- SKIKO: copy skiko and kotlin-stdlib artifacts to "third_party/jogamp/jar" directory -->
+      <include name="skiko-awt-0.7.22.jar"/>
+      <include name="kotlin-stdlib-1.6.10.jar"/>
+      <!-- SKIKO -->
     </fileset>
     <fileset dir="third_party/junit" includes="junit*.jar"/>
   </path>
@@ -71,6 +75,10 @@
         <include name="gluegen-rt-natives-macosx-universal.jar" />
         <include name="jogl-all.jar" />
         <include name="jogl-all-natives-macosx-universal.jar" />
+        <!-- SKIKO: copy skiko and kotlin-stdlib artifacts to "third_party/jogamp/jar" directory -->
+        <include name="skiko-awt-0.7.22.jar"/>
+        <include name="kotlin-stdlib-1.6.10.jar"/>
+        <!-- SKIKO -->
       </classpath>
       <classpath dir="third_party/junit" includes="junit*.jar"/>
       <option value="-Djava.library.path=$APP_ROOT/Contents/Java/:$APP_ROOT/Contents/Frameworks/Chromium Embedded Framework.framework/Libraries" />

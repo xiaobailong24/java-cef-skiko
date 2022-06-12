@@ -15,6 +15,7 @@ import java.io.FilenameFilter;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.HashSet;
+import kotlin.Pair;
 
 import javax.swing.SwingUtilities;
 import javax.swing.Timer;
@@ -67,6 +68,7 @@ public class CefApp extends CefAppHandlerAdapter {
 
         @Override
         public String toString() {
+            new Pair("", "");
             return "JCEF Version = " + getJcefVersion() + "\n"
                     + "CEF Version = " + getCefVersion() + "\n"
                     + "Chromium Version = " + getChromeVersion();
